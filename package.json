@@ -1,0 +1,65 @@
+{
+  "name": "@datalayer/copilot-lexical",
+  "version": "0.1.0",
+  "description": "Lexical editor with CopilotKit sidebar integration",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "start": "vite --port",
+    "build": "cross-env NODE_OPTIONS=--max-old-space-size=16384 tsc && cross-env NODE_OPTIONS=--max-old-space-size=16384 vite build",
+    "preview": "vite preview",
+    "type-check": "tsc --noEmit",
+    "sync:core": "bash dev/sh/sync-core.sh",
+    "sync:jupyter": "bash dev/sh/sync-jupyter-packages.sh",
+    "sync:all": "bash dev/sh/sync-all.sh",
+    "dev:sync": "npm run sync:all && npm run dev"
+  },
+  "dependencies": {
+    "@copilotkit/react-core": "latest",
+    "@copilotkit/react-ui": "latest",
+    "@datalayer/jupyter-lexical": "latest",
+    "@datalayer/jupyter-react": "latest",
+    "@datalayer/primer-addons": "latest",
+    "@jupyterlab/services": "^7.0.0",
+    "@lexical/code": "^0.35.0",
+    "@lexical/markdown": "^0.35.0",
+    "@lexical/react": "^0.35.0",
+    "@primer/octicons-react": "latest",
+    "@primer/react": "latest",
+    "lexical": "^0.35.0",
+    "prettier": "^3.5.3",
+    "prismjs": "latest",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-toastify": "^10.0.6",
+    "stream": "^0.0.2",
+    "stream-browserify": "^2.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/prismjs": "latest",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react": "latest",
+    "cross-env": "^10.1.0",
+    "typescript": "latest",
+    "vite": "latest"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/datalayer/copilot-lexical.git"
+  },
+  "keywords": [
+    "lexical",
+    "copilotkit",
+    "jupyter",
+    "notebook",
+    "ai",
+    "editor"
+  ],
+  "author": "Datalayer, Inc.",
+  "license": "MIT"
+}

@@ -1,0 +1,22 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.lexical-editor-inner {
+  position: relative;
+  width: 100%;
+  min-height: 400px;
+}
+
+.lexical-editor-content {
+  min-height: 400px;
+  padding: 16px;
+  outline: none;
+}
+
+.lexical-editor-content:focus {
+  outline: none;
+}
