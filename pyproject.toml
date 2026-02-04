@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "copilot-lexical"
+version = "0.1.0"
+description = "Lexical editor with CopilotKit integration"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [
+    { name = "goanpeca", email = "goanpeca@gmail.com" }
+]
+license = { text = "MIT" }
+
+[project.urls]
+Homepage = "https://github.com/datalayer/copilot-lexical"
+Repository = "https://github.com/datalayer/copilot-lexical"
+
+[project.scripts]
+copilot-lexical = "copilot_lexical.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["copilot_lexical*"]

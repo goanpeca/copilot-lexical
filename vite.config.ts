@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react';
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/copilot-lexical/',
   plugins: [
     react(),
     // Plugin to handle ?raw CSS imports (.raw.css files)
@@ -60,6 +61,10 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     sourcemap: true,
+    commonjsOptions: {
+      transformMixedEsModules: true,
+      include: [/node_modules/],
+    },
   },
   css: {
     preprocessorOptions: {
@@ -95,5 +100,6 @@ export default defineConfig({
       '@copilotkit/react-ui',
     ],
     exclude: ['@lexical/react', '@lexical/rich-text'],
+    force: true, // Force re-optimization to handle CommonJS modules
   },
 });

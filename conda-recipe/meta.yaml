@@ -1,0 +1,47 @@
+{% set name = "copilot-lexical" %}
+{% set version = "0.1.0" %}
+
+package:
+  name: {{ name|lower }}
+  version: {{ version }}
+
+source:
+  path: ..
+
+build:
+  number: 0
+  noarch: python
+  script:
+    - {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+
+requirements:
+  build:
+    - python
+    - setuptools >=61.0
+    - pip
+    - wheel
+  host:
+    - python >=3.11
+    - pip
+    - setuptools >=61.0
+    - wheel
+  run:
+    - python >=3.11
+
+test:
+  imports:
+    - copilot_lexical
+
+about:
+  home: https://github.com/goanpeca/copilot-lexical
+  license: MIT
+  license_file: LICENSE
+  summary: Lexical editor with CopilotKit integration
+  description: |
+    A standalone Node.js application combining Lexical editor with CopilotKit
+    AI sidebar, with a Python wrapper for easy deployment.
+  dev_url: https://github.com/goanpeca/copilot-lexical
+
+extra:
+  recipe-maintainers:
+    - goanpeca

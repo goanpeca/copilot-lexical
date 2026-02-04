@@ -1,0 +1,86 @@
+/*
+ * Copyright (c) 2025-2026 Datalayer, Inc.
+ * MIT License
+ */
+
+/**
+ * Lexical editor theme configuration
+ * Must match CSS class names in lexical-theme.css
+ */
+export const lexicalTheme = {
+  ltr: 'ltr',
+  rtl: 'rtl',
+  paragraph: 'lexical-theme-paragraph',
+  quote: 'lexical-theme-quote',
+  heading: {
+    h1: 'lexical-theme-heading-h1',
+    h2: 'lexical-theme-heading-h2',
+    h3: 'lexical-theme-heading-h3',
+    h4: 'lexical-theme-heading-h4',
+    h5: 'lexical-theme-heading-h5',
+    h6: 'lexical-theme-heading-h6',
+  },
+  list: {
+    nested: {
+      listitem: 'lexical-theme-list-nested-listitem',
+    },
+    ol: 'lexical-theme-list-ol',
+    ul: 'lexical-theme-list-ul',
+    listitem: 'lexical-theme-list-listitem',
+    listitemChecked: 'lexical-theme-list-listitemChecked',
+    listitemUnchecked: 'lexical-theme-list-listitemUnchecked',
+    checklist: 'lexical-theme-list-checklist',
+  },
+  hashtag: 'lexical-theme-hashtag',
+  image: 'lexical-theme-image',
+  link: 'lexical-theme-link',
+  text: {
+    bold: 'lexical-theme-bold',
+    code: 'lexical-theme-code',
+    italic: 'lexical-theme-italic',
+    strikethrough: 'lexical-theme-strikethrough',
+    subscript: 'lexical-theme-subscript',
+    superscript: 'lexical-theme-superscript',
+    underline: 'lexical-theme-underline',
+    underlineStrikethrough: 'lexical-theme-underlineStrikethrough',
+  },
+  code: 'lexical-theme-code-block',
+  codeHighlight: {
+    atrule: 'lexical-theme-code-tokenAttr',
+    attr: 'lexical-theme-code-tokenAttr',
+    boolean: 'lexical-theme-code-tokenBoolean',
+    builtin: 'lexical-theme-code-tokenSelector',
+    cdata: 'lexical-theme-code-tokenComment',
+    char: 'lexical-theme-code-tokenSelector',
+    class: 'lexical-theme-code-tokenFunction',
+    'class-name': 'lexical-theme-code-tokenFunction',
+    comment: 'lexical-theme-code-tokenComment',
+    constant: 'lexical-theme-code-tokenProperty',
+    deleted: 'lexical-theme-code-tokenProperty',
+    doctype: 'lexical-theme-code-tokenComment',
+    entity: 'lexical-theme-code-tokenOperator',
+    function: 'lexical-theme-code-tokenFunction',
+    important: 'lexical-theme-code-tokenVariable',
+    inserted: 'lexical-theme-code-tokenSelector',
+    keyword: 'lexical-theme-code-tokenKeyword',
+    namespace: 'lexical-theme-code-tokenVariable',
+    number: 'lexical-theme-code-tokenNumber',
+    operator: 'lexical-theme-code-tokenOperator',
+    prolog: 'lexical-theme-code-tokenComment',
+    property: 'lexical-theme-code-tokenProperty',
+    punctuation: 'lexical-theme-code-tokenPunctuation',
+    regex: 'lexical-theme-code-tokenRegex',
+    selector: 'lexical-theme-code-tokenSelector',
+    string: 'lexical-theme-code-tokenString',
+    symbol: 'lexical-theme-code-tokenProperty',
+    tag: 'lexical-theme-code-tokenProperty',
+    url: 'lexical-theme-code-tokenOperator',
+    variable: 'lexical-theme-code-tokenVariable',
+  },
+  table: 'lexical-theme-table',
+  tableCell: 'lexical-theme-tableCell',
+  tableCellHeader: 'lexical-theme-tableCellHeader',
+  hr: 'lexical-theme-hr',
+  mark: 'lexical-theme-mark',
+  placeholder: 'lexical-theme-placeholder',
+};
